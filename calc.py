@@ -23,7 +23,9 @@ print 'The product of ',x,' and ',y,' is ',mul
 if rem == 0:
 	print 'The quotient of ',x,' and ',y,' is ',quo
 else:
-	print 'The quotient of ',x,' and ',y,' is ',quo,' with a remainder of ',rem
+	fquo = float(x)/y
+	print 'The quotient of ',x,' and ',y,' is ',quo,' with a remainder of ',rem,' , '
+	print '		or when expressed as a decimal, ',fquo
 if add % 2 == 0:
 	av1 = add/2
 	print 'Finally, the average of ',x,' and ',y,' is ',av1
