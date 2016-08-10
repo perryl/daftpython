@@ -14,9 +14,10 @@ def main():
     parser = argparse.ArgumentParser(description='Reverses contents of a '
                                                  'given string.')
     parser.add_argument('--string', type=str, help='String to be reversed.')
-    args = parser.parse_args()
-    s = args.string
-    rev_str = reverse(s)
+    arg = parser.parse_args()
+    if not arg.string:
+        raise Exception('Function cannot accept null or empty string')
+    rev_str = reverse(arg.string)
     print (rev_str)
 
 if __name__ == "__main__":
